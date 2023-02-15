@@ -1,11 +1,10 @@
 # Ski_resorts_Switzerland
-Ski Resorts Switzerland Analysis
+Ski Resorts Switzerland
 
 
-Web Crawler, Data Processing, Data Visualisation
+Currently working on this project. More to come soon.
 
-Ziel: Übersicht der Schweizer Skigebiete inkl. Höhenlage
+#Python #Pandas #Dash #Plotly #PowerBI
 
-Mittels eines Crawlers (Python) wurde eine Website gecrawlt. Die Daten wurden mittels Jupyter Files gecleaned. Im PowerBI wurden die Daten visuell aufbereitet.
 
-Autor: Marius Gisler
+Author: Marius Gisler
