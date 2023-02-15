@@ -1,6 +1,4 @@
-# Ski_resorts_Switzerland
-Ski Resorts Switzerland
-
+# Swiss Ski Resorts
 
 Currently working on this project. More to come soon.
 
