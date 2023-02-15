@@ -7,7 +7,7 @@ import numpy as np
 import openpyxl
 
 
-def crawler():
+def crawler_my_switerland_daily():
     # Get the data from the Website
     url = 'https://www.bergfex.ch/schweiz/schneewerte/'
     dfs = pd.read_html(url)
@@ -62,8 +62,8 @@ def crawler():
     # Save to Excel File
     today = datetime.today()
     today_str = today.strftime('%d-%m-%Y')
-    df.to_excel(today_str + '_Output.xlsx', index=False)
+    df.to_excel('../Data/'+ today_str + '_Output_MySwitzerland_daily.xlsx', index=False)
     return df
 
 
-crawler()
+crawler_my_switerland_daily()

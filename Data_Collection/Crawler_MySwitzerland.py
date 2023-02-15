@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 # Selenium Config
-path = os.path.abspath(os.path.join(os.path.normpath(os.path.dirname(__file__)), '../chromedriver.exe'))
+path = os.path.abspath(os.path.join(os.path.normpath(os.path.dirname(__file__)), 'chromedriver.exe'))
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument('log-level=3')
@@ -14,7 +14,7 @@ chrome_options.add_argument('--window-size=1920,1080')
 driver = webdriver.Chrome(executable_path=path, options=chrome_options)
 
 
-def skiresort_crawler_myswitzerland():
+def crawler_myswitzerland():
     driver.get('https://snow.myswitzerland.com/schneebericht/')
     t.sleep(2)
     i = 0
@@ -41,7 +41,7 @@ def skiresort_crawler_myswitzerland():
         t.sleep(1)
 
     print(df)
-    df.to_csv('Output_Skiresort_MySwitzerland.csv', index=False)
+    df.to_csv('../Data/Output_Skiresort_MySwitzerland.csv', index=False)
 
     # Close the webdriver
     driver.close()
